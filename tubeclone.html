@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between p-4 bg-grey-300 shadow sticky top-0 z-50">
+    <div class="flex items-center space-x-4">
+      <img src="crispy/clone.jpg" class="w-8 h-8" alt="Logo">
+      <h1 class="text-xl font-bold text-red-600">YouTube</h1>
+    </div>
+    <div class="flex flex-1 max-w-xl mx-4">
+      <input type="text" placeholder="Search" class="w-full p-2 border border-gray-300 rounded-l-full">
+      <button class="p-2 bg-gray-300 rounded-r-full">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <div class="flex items-center space-x-4">
+      <i class="fa-solid fa-bell text-2xl"></i>
+      <div class="w-8 h-8 bg-gray-400 rounded-full"></div>
+    </div>
+  </header>
+
+  <!-- Layout wrapper -->
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-60 bg-pink-200 p-4 hidden md:block shadow-md h-screen sticky top-16">
+      <nav class="space-y-4">
+        <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 rounded"><i class="fa-solid fa-house mr-2"></i>Home</a>
+        <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 rounded"><i class="fa-solid fa-address-card mr-2"></i>About</a>
+        <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 rounded"><i class="fa-solid fa-photo-film mr-2"></i>Shorts</a>
+        <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 rounded"><i class="fa-solid fa-book mr-2"></i>Library</a>
+        <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 rounded"><i class="fa-solid fa-clock-rotate-left mr-2"></i>History</a>
+        <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 rounded"><i class="fa-solid fa-chart-column mr-2"></i>trending</a>
+        <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 rounded"><i class="fa-brands fa-youtube mr-2"></i>youtube studio</a>
+        <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 rounded"><i class="fa-solid fa-person-chalkboard mr-2"></i>courses</a>
+        
+        
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-4 overflow-y-auto bg-grey-400">
+      <!-- Category Navbar -->
+      <div class="flex flex-wrap gap-2 mb-4">
+        <button class="bg-gray-200 px-4 py-2 rounded-full hover:bg-red-700">All</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full hover:bg-red-700">Music</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full hover:bg-red-700">Tamil Cinema</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full hover:bg-red-700">Live</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full hover:bg-red-700">Gaming</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full hover:bg-red-700">Web Development</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full hover:bg-red-700">Albums</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full hover:bg-red-700">Data Structures</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full hover:bg-red-700">fashion and beauty</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full hover:bg-red-700 text-blue-800">send feedback</button>
+      </div>
+
+      <!-- Video Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Video Card Example -->
+        <div class="bg-white shadow rounded overflow-hidden">
+          <img src="crispy/titan.jpg" class="w-full h-60 object-cover">
+          <div class="p-2">
+            <h3 class="text-sm font-semibold">Video Title</h3>
+            <p class="text-xs text-gray-500">Channel Name • 1M views • 1 day ago</p>
+          </div>
+        </div>
+
+        <!-- Repeat for all videos -->
+        <!-- Replace with your actual images -->
+        <div class="bg-white shadow rounded overflow-hidden">
+          
+            <img src="crispy/Screenshot (1).jpg"  class="w-full h-60 object-cover">
+            
+            <div class="p-2">
+            <h3 class="text-sm font-semibold">Another Video</h3>
+            <p class="text-xs text-gray-500">Channel Name • 500k views • 2 days ago</p>
+          </div>
+        </div>
+        <!-- Repeat for all videos -->
+        <!-- Replace with your actual images -->
+        <div class="bg-white shadow rounded overflow-hidden">
+          
+          <img src="crispy/Screenshot (3).jpg"  class="w-full h-60 object-cover">
+          
+          <div class="p-2">
+          <h3 class="text-sm font-semibold">Another Video</h3>
+          <p class="text-xs text-gray-500">Channel Name • 500k views • 2 days ago</p>
+        </div>
+      </div>
+      <!-- Repeat for all videos -->
+        <!-- Replace with your actual images -->
+        <div class="bg-white shadow rounded overflow-hidden">
+          
+          <img src="crispy/Screenshot (11).jpeg"  class="w-full h-60 object-cover">
+          
+          <div class="p-2">
+          <h3 class="text-sm font-semibold">Another Video</h3>
+          <p class="text-xs text-gray-500">Channel Name • 500k views • 2 days ago</p>
+        </div>
+      </div>
+<!-- Repeat for all videos -->
+        <!-- Replace with your actual images -->
+        <div class="bg-white shadow rounded overflow-hidden">
+          
+          <img src="crispy/clone.jpg"  class="w-full h-60 object-cover">
+          
+          <div class="p-2">
+          <h3 class="text-sm font-semibold">Another Video</h3>
+          <p class="text-xs text-gray-500">Channel Name • 500k views • 2 days ago</p>
+        </div>
+      </div>
+      <!-- Repeat for all videos -->
+        <!-- Replace with your actual images -->
+        <div class="bg-white shadow rounded overflow-hidden">
+          
+          <img src="crispy/Screenshot (3).jpg"  class="w-full h-60 object-cover">
+          
+          <div class="p-2">
+          <h3 class="text-sm font-semibold">Another Video</h3>
+          <p class="text-xs text-gray-500">Channel Name • 500k views • 2 days ago</p>
+        </div>
+      </div>
+<!-- Repeat for all videos -->
+        <!-- Replace with your actual images -->
+        <div class="bg-white shadow rounded overflow-hidden">
+          
+          <img src="crispy/computer.jpg"  class="w-full h-60 object-cover">
+          
+          <div class="p-2">
+          <h3 class="text-sm font-semibold">Another Video</h3>
+          <p class="text-xs text-gray-500">Channel Name • 500k views • 2 days ago</p>
+        </div>
+      </div>
+<!-- Repeat for all videos -->
+        <!-- Replace with your actual images -->
+        <div class="bg-white shadow rounded overflow-hidden">
+          
+          <img src="crispy/fishes.jpg"  class="w-full h-60 object-cover">
+          
+          <div class="p-2">
+          <h3 class="text-sm font-semibold">Another Video</h3>
+          <p class="text-xs text-gray-500">Channel Name • 500k views • 2 days ago</p>
+        </div>
+      </div>
+<!-- Repeat for all videos -->
+        <!-- Replace with your actual images -->
+        <div class="bg-white shadow rounded overflow-hidden">
+          
+          <img src="crispy/titan.jpg"  class="w-full h-60 object-cover">
+          
+          <div class="p-2">
+          <h3 class="text-sm font-semibold">Another Video</h3>
+          <p class="text-xs text-gray-500">Channel Name • 500k views • 2 days ago</p>
+        </div>
+      </div>
+
+      <!-- Repeat for all videos -->
+        <!-- Replace with your actual images -->
+        <div class="bg-white shadow rounded overflow-hidden">
+          
+          <img src="crispy/fishes.jpg"  class="w-full h-60 object-cover">
+          
+          <div class="p-2">
+          <h3 class="text-sm font-semibold">Another Video</h3>
+          <p class="text-xs text-gray-500">Channel Name • 500k views • 2 days ago</p>
+        </div>
+      </div>
+      <!-- Repeat for all videos -->
+        <!-- Replace with your actual images -->
+        <div class="bg-white shadow rounded overflow-hidden">
+          
+          <img src="crispy/Screenshot (3).jpg"  class="w-full h-60 object-cover">
+          
+          <div class="p-2">
+          <h3 class="text-sm font-semibold">Another Video</h3>
+          <p class="text-xs text-gray-500">Channel Name • 500k views • 2 days ago</p>
+        </div>
+      </div>
+
+
+
+      
+    </main>
+  </div>
+</body>
+</html>
